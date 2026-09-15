@@ -1,0 +1,72 @@
+{
+  "users": {
+    "student_example_com": {
+      "email": "student@example.com",
+      "token": "reset-1785635390843-rii4ir",
+      "createdAt": "2026-08-02T01:49:50.843Z",
+      "id": "student_example_com",
+      "password": "newpass123",
+      "updatedAt": "2026-08-02T01:50:37.948Z"
+    },
+    "test@example.com": {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "pass123",
+      "role": "student",
+      "active": true,
+      "createdAt": "2026-08-03T23:56:01.020Z",
+      "id": "test@example.com"
+    }
+  },
+  "courses": {},
+  "lessons": {},
+  "assignments": {},
+  "quizzes": {
+    "quizzes-1785636549678-4m0mqf": {
+      "title": "Sample Quiz",
+      "questions": [
+        {
+          "question": "What is 2+2?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "correctAnswer": "4"
+        },
+        {
+          "question": "Capital of Ethiopia?",
+          "options": [
+            "Nairobi",
+            "Addis Ababa",
+            "Cairo",
+            "Lagos"
+          ],
+          "correctAnswer": "Addis Ababa"
+        }
+      ],
+      "createdBy": "instructor@example.com",
+      "createdAt": "2026-08-02T02:09:09.677Z",
+      "id": "quizzes-1785636549678-4m0mqf"
+    }
+  },
+  "quizAttempts": {},
+  "passwordResets": {
+    "reset-1785635252961-j4x2ky": {
+      "email": "student@example.com",
+      "token": "reset-1785635252961-j4x2ky",
+      "createdAt": "2026-08-02T01:47:32.961Z",
+      "id": "reset-1785635252961-j4x2ky"
+    },
+    "reset-1785636168278-iej0j1": {
+      "email": "student@example.com",
+      "token": "reset-1785636168278-iej0j1",
+      "createdAt": "2026-08-02T02:02:48.278Z",
+      "id": "reset-1785636168278-iej0j1"
+    }
+  },
+  "subscribers": {},
+  "enrollments": {},
+  "progress": {}
+}
