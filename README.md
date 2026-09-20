@@ -4,12 +4,22 @@
 
 A modern, full-stack Learning Management System built with **React**, **Vite**, **Node.js**, **Express**, and **Firebase**. Designed for seamless course discovery, enrollment, student progress tracking, quizzes, assignments, and role-based administration.
 
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-coursemanagment.vercel.app-blue?style=for-the-badge&logo=vercel)](https://coursemanagment.vercel.app/)
+
+<br/><br/>
+
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646C9F?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-Firestore%20%26%20Auth-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel&logoColor=white)](https://vercel.com/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/Yimencodehub/Coursemanagment)
+
+<br/>
+
+🔗 **Live Website URL**: **[https://coursemanagment.vercel.app/](https://coursemanagment.vercel.app/)**
 
 <br/>
 
@@ -21,6 +31,7 @@ A modern, full-stack Learning Management System built with **React**, **Vite**, 
 
 ## 📌 Table of Contents
 
+- [🌐 Live Demo](#-live-demo)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
@@ -31,6 +42,16 @@ A modern, full-stack Learning Management System built with **React**, **Vite**, 
 - [Vercel Deployment Guide](#-vercel-deployment-guide)
 - [API Reference](#-api-reference)
 - [Author & License](#-author--license)
+
+---
+
+## 🌐 Live Demo
+
+The application is deployed live on Vercel:
+
+👉 **[https://coursemanagment.vercel.app/](https://coursemanagment.vercel.app/)**
+
+Feel free to visit, register an account, or test with the [demo credentials](#-demo-credentials).
 
 ---
 
