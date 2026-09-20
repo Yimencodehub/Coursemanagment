@@ -1,3 +1,5 @@
+import { API_BASE_URL } from '../config/api';
+
 const COURSE_STORAGE_KEY = 'app_courses';
 const ENROLLMENT_STORAGE_KEY = 'app_enrollments';
 
@@ -38,7 +40,7 @@ const writeJson = (key, value) => {
 export const api = {
   getCourses: async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/courses');
+      const response = await fetch(`${API_BASE_URL}/api/courses`);
       if (response.ok) {
         const data = await response.json();
         const courses = Array.isArray(data) ? data : [];
@@ -55,7 +57,7 @@ export const api = {
 
   getCourse: async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/courses/${id}`);
+      const response = await fetch(`${API_BASE_URL}/api/courses/${id}`);
       if (response.ok) {
         return await response.json();
       }
@@ -68,7 +70,7 @@ export const api = {
 
   createCourse: async (course) => {
     try {
-      const response = await fetch('http://localhost:5000/api/courses', {
+      const response = await fetch(`${API_BASE_URL}/api/courses`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(course),
@@ -94,7 +96,7 @@ export const api = {
 
   updateCourse: async (id, updates) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/courses/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updates),
@@ -117,7 +119,7 @@ export const api = {
 
   deleteCourse: async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/courses/${id}`, { method: 'DELETE' });
+      await fetch(`${API_BASE_URL}/api/courses/${id}`, { method: 'DELETE' });
     } catch {
       // fallback
     }
@@ -129,7 +131,7 @@ export const api = {
 
   assignInstructor: async (id, instructorEmail) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/courses/${id}/assign-instructor`, {
+      const response = await fetch(`${API_BASE_URL}/api/courses/${id}/assign-instructor`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ instructor: instructorEmail }),

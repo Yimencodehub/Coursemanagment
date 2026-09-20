@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import { API_BASE_URL } from '../config/api';
 
 const SUBSCRIBER_STORAGE_KEY = 'app_subscribers';
 
@@ -33,7 +34,7 @@ export default function Footer() {
 
     // 2. Write to Server API
     try {
-      await fetch('http://localhost:5000/api/subscribers', {
+      await fetch(`${API_BASE_URL}/api/subscribers`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: trimmedEmail }),
